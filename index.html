@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Karolina Ivanova profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Karolina Ivanova</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <a href="assets/CV_EN_Karolina_Ivanova.pdf" download="CV Karolina"><button
+            class="btn btn-color-2"
+          >
+            Download CV
+          </button></a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/karolina-ivanova-a41a8a111'"
+          />
+        <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mammacodes'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+       <div class="section__pic-container">
+        <img
+            src="./assets/profile2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+          </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <br>
+              <p><b>5 years</b><br />Bakery Manager</p>
+              <br>
+              <p><b>1.5 years</b><br />Office Manager</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br>
+              <p><b>Full stack web development course</b><br />MUZA Formazione, Italy</p>
+              <br>
+              <p><b>Bachelor's degree in economics</b><br />Academy of economics "D.Tsenov", Bulgaria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+                <article>
+                  <div class="skill_container">
+                     <i class="fa-brands fa-html5 skill_icon"></i>
+                     <span class="skill_name">HTML5</span>
+                  </div>
+              </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-brands fa-css3-alt skill_icon"></i>
+                   <span class="skill_name">CSS</span>
+                </div>
+            </article>
+            <article>
+              <div class="skill_container">
+                <i class="fa-brands fa-bootstrap skill_icon"></i>
+                 <span class="skill_name">Bootstrap</span>
+              </div>
+          </article>
+          <article>
+            <div class="skill_container">
+              <i class="fa-brands fa-js skill_icon"></i>
+               <span class="skill_name">Javascript</span>
+            </div>
+        </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-brands fa-react skill_icon"></i>
+                   <span class="skill_name">React</span>
+                </div>
+              </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-solid fa-code skill_icon"></i>
+                   <span class="skill_name">APIs</span>
+                </div>
+              </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-solid fa-database skill_icon"></i>
+                   <span class="skill_name">MySQL</span>
+                </div>
+              </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-brands fa-php skill_icon"></i>
+                   <span class="skill_name">PHP</span>
+                </div>
+              </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-brands fa-docker skill_icon"></i>
+                   <span class="skill_name">Docker</span>
+                </div>
+              </article>
+              <article>
+                <div class="skill_container">
+                  <i class="fa-brands fa-git skill_icon"></i>
+                   <span class="skill_name">Git</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Take a look at my</p>
+      <h1 class="title">Certificates</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">HTML&CSS</h2>
+              <div class="zoom-img">
+              <img
+                src="./assets/HTMLCSS.jpg"
+                alt="HTML/CSS certificate"
+                class="project-img"
+              />  
+              </div>
+            </div>
+            <div class="btn-container">
+              <a href="assets/HTML and CSS.pdf" download="html/css certificate"><button
+                class="btn btn-color-2 project-btn"
+              >
+                Download
+              </button></a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">JavaScript</h2>
+              <div class="zoom-img">
+              <img
+                src="./assets/JavaScript.jpg"
+                alt="Javascript certificate"
+                class="project-img"
+              />
+              </div>
+            </div>
+            <div class="btn-container">
+              <a href="assets/javascript.pdf" download="javascript certificate"><button
+                class="btn btn-color-2 project-btn"
+              >
+                Download
+              </button></a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">PHP</h2>
+              <div class="zoom-img">
+              <img
+                src="./assets/PHP.jpg"
+                alt="PHP"
+                class="project-img"
+              />
+              </div>
+            </div>
+            <div class="btn-container">
+              <a href="assets/php.pdf" download="php certificate"><button
+                class="btn btn-color-2 project-btn"
+              >
+                Download
+              </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:dobreva.karolina@gmail.com" class="contact_link">dobreva.karolina@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/karolina-ivanova-a41a8a111" class="contact_link">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 mammacodes. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
